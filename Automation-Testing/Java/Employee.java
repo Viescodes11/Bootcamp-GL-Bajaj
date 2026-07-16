@@ -1,9 +1,11 @@
-package com.InheritenceExamples;
+package com.MethodOverridingExamples;
 
 public class Employee {
-	protected String name = "Vishesh";
-	 protected int employeeID = 101;
-	 protected double salary = 500000;
-	 
+	
 
-}
+	    public void work() {
+	        System.out.println("Employee is working.");
+	    }
+	}
+
+

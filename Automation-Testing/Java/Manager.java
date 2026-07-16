@@ -1,13 +1,23 @@
-package com.InheritenceExamples;
+package com.MethodOverridingExamples;
 
-public class Manager extends Employee {
+	public class Manager extends Employee {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Manager obj = new Manager();
-		System.out.println("Name:" + obj.name);
-		System.out.println("EmployeeId:" + obj.employeeID);
-		System.out.println("Salary:" + obj.salary);
+	    @Override
+	    public void work() {
+	        System.out.println("Manager is managing the team.");
+	    }
+
+	    public static void main(String[] args) {
+
+	        Employee emp = new Employee();
+	        emp.work();
+
+	        Developer dev = new Developer();
+	        dev.work();
+
+	        Manager mgr = new Manager();
+	        mgr.work();
+	    }
 	}
 
-}
+
